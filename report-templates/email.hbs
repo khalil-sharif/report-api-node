@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body style="font-family: Arial, sans-serif; color: #1f2937;">
+    <h2 style="color:#2563eb;">{{templateName}}</h2>
+    <p>Your scheduled {{format}} report is ready.</p>
+    {{#if attached}}
+      <p>The report is attached to this email.</p>
+    {{else}}
+      <p><a href="{{downloadUrl}}">Download report</a> (link valid for a limited time).</p>
+    {{/if}}
+    <hr/>
+    <p style="color:#6b7280;font-size:12px;">Generated {{generatedAt}} · Report id {{reportId}}</p>
+  </body>
+</html>
